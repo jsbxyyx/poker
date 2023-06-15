@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>斗地主</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.60.0/phaser.min.js"></script>
+    <script src="app.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .m5 {
+            margin: 5px;
+        }
+
+        .mr5 {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="game">
+    </div>
+
+    <div style="position: absolute; z-index: 1; top: 0;">
+        <div class="m5">
+            <label for="roomid">roomid</label>
+            <input type="text" id="g-roomid" />
+        </div>
+        <div class="m5">
+            <label for="userid">userid</label>
+            <input type="text" id="g-userid" />
+        </div>
+        <div class="m5">
+            <label for="nickname">nickname</label>
+            <input type="text" id="g-nickname" />
+        </div>
+        <div class="m5">
+            <button id="g-start">start</button>
+            <button id="g-exit">exit</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
